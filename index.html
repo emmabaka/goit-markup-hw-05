@@ -60,7 +60,9 @@
       <section class="hero">
         <div class="conteiner">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn">Замовити послугу</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -131,6 +133,9 @@
                 alt="Людина друкує на клавіатурі"
                 width="370"
               />
+              <div class="work-desc">
+                <p class="work-text">Десктопні додатки</p>
+              </div>
             </li>
             <li class="work-item">
               <img
@@ -138,6 +143,9 @@
                 alt="Жінка тримає в руках телефон"
                 width="370"
               />
+              <div class="work-desc">
+                <p class="work-text">Мобільні додатки</p>
+              </div>
             </li>
             <li class="work-item">
               <img
@@ -145,6 +153,9 @@
                 alt="Кольорова гама на планшеті"
                 width="370"
               />
+              <div class="work-desc">
+                <p class="work-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -429,5 +440,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg width="14" height="14">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./modal.js"></script>
   </body>
 </html>
